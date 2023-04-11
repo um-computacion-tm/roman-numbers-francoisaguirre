@@ -1,25 +1,25 @@
 import unittest
-from palindrome import palindrome
+from palindromos import palindromos
 
 class TestPalindrome(unittest.TestCase):
     def test_palindrome_simple(self):
-        result = palindrome('neuquen')
+        result = palindromos('neuquen')
         self.assertEqual(result, True)
 
     def test_palindrome_complex(self):
-        result = palindrome('anita laba la tina')   
+        result = palindromos('anita laba la tina')   
         self.assertEqual(result, True)  
         
     def test_palindorme_complex2(self):
-        result = palindrome('ana') 
+        result = palindromos('ana') 
         self.assertEqual(result, True)   
 
     def test_palindorme_complex3(self):
-        result = palindrome('amor a roma') 
+        result = palindromos('amor a roma') 
         self.assertEqual(result, True)
         
     def test_palindorme_complex4(self):
-        result = palindrome('radar') 
+        result = palindromos('radar') 
         self.assertEqual(result, True)    
 
 if __name__ == '__main__':
